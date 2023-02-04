@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+<link rel="icon" href="icon.jpg">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AutoHost</title>
+   <style>
+      @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap&subset=latin-ext');
+
+   html, body{
+
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+   .pirosvonal{
+
+      border: 1px solid red;
+
+   }
+   .kozepso{
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Work Sans';
+      font-size: 40px;
+      text-align: center;
+      flex-direction: column
+   }
+   .fejlec{
+      display: flex;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+
+   }
+   .lablec{
+      display: flex;
+      justify-content: center;
+   }
+   .hatterkep{
+      background-image: url("hattergif.gif");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+
+   }
+
+   
+   .hattervideo{
+      position: absolute;
+      z-index: -100;
+      top: 50%;
+      left: 50%;
+      min-width: 50%;
+      min-height: 50%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+   }
+
+   a{
+      text-decoration: none;
+      color: white;
+      margin: 10px;
+   }
+
+   .gombocska{
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgba(0, 0,0, 0.5);
+      padding: 10px 40px;
+      width: 120px;
+      display: inline-block;
+      text-align: center;
+   }
+   .gombocska:hover{
+      background-color: yellow;
+      color:black;
+   }
+
+   /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+   @media only screen and (max-width: 670px){
+      .fejlec{
+         font-size: 36px;
+         flex-grow: 1;
+         justify-content: center;
+         align-items: center;
+         display: flex;
+         display: block;
+         word-wrap:break-word;
+         text-align: center;
+         flex-direction: column
+      }
+      .gombocska{
+      }
+      }
+
+   </style>
+</head>
+<body class="hatterkep">
+      
+      <nav class="fejlec">
+         <a class="gombocska" href="index2.html">Szolgáltatásaink</a>
+         <a class="gombocska" href="index2.html">Képek</a>
+         <a class="gombocska" href="index2.html">Rólunk</a>
+         <a class="gombocska" href="index2.html">Kapcsolat</a>
+      </nav>
+
+      <div class="kozepso"><div>AutoHost</div>  <div>Egy új kezdet</div></div>
+      <footer class="lablec">&copy;AutoHost 2023-<span id="year"></span><span></footer>
+      <script>
+         var d = new Date();
+         var n = d.getUTCFullYear();
+         document.getElementById("year") .innerHTML = n;
+      </script>
+
+
+</body>
+</html>
