@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<link rel="icon" href="icon.jpg">
+<head>
+   <style>
+      @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap&subset=latin-ext');
+
+   html, body{
+
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+   .pirosvonal{
+
+      border: 1px solid red;
+
+   }
+   .kozepso{
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Work Sans';
+      font-size: 40px;
+      text-align: center;
+      flex-direction: column
+   }
+   .fejlec{
+      display: flex;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+
+   }
+   .lablec{
+      display: flex;
+      justify-content: center;
+   }
+   .hatterkep{
+      background-image: url("hatter.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+   }
+   .hattervideo{
+      position: absolute;
+      z-index: -100;
+      top: 50%;
+      left: 50%;
+      min-width: 50%;
+      min-height: 50%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+   }
+
+   a{
+      text-decoration: none;
+      color: white;
+      margin: 10px;
+   }
+
+   .gombocska{
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgba(0, 0,0, 0.5);
+      padding: 10px 40px;
+      width: 120px;
+      display: inline-block;
+      text-align: center;
+   }
+   .gombocska:hover{
+      background-color: yellow;
+      color:black;
+   }
+
+   @media (max-width: 767px){
+   }
+   @media (max-height: 350px){
+   }
+   </style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AutoHost</title>
+</head>
+<body class="hatterkep">
+      <video class="hattervideo" autoplay loop muted poster="hatter.jpg" src="hatter6.mp4"></video>
+
+      <nav class="fejlec">
+         <a class="gombocska" href="index2.html">Szolgáltatásaink</a>
+         <a class="gombocska" href="index2.html">Képek</a>
+         <a class="gombocska" href="index2.html">Rólunk</a>
+         <a class="gombocska" href="index2.html">Kapcsolat</a>
+      </nav>
+
+      <div class="kozepso"><div>AutoHost</div>  <div>Egy új kezdet</div></div>
+      <footer class="fejlec">&copy;AutoHost 2023-<span id="year2"></span><span></footer>
+      <script>
+         var d = new Date();
+         var n = d.getUTCFullYear();
+         document.getElementById("year1") .innerHTML = n;
+      </script>
+            <script>
+               var d = new Date();
+               var n = d.getUTCFullYear();
+               document.getElementById("year2") .innerHTML = n;
+            </script>
+
+</body>
+</html>
